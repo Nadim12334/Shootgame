@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: crosshair;
+  }
+  body{
+    background-color: #373952;
+   
+  }
+  .main {
+    margin: 0;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(63, 149, 122);
+    position: absolute;
+    animation-name: archery;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    position: absolute;
+    top: 50%;
+   
+  }
+ 
+  @keyframes archery {
+    0% {
+      left: 10%;
+      top: 50%;
+    }
+    50% {
+      left: calc(100vw - 110px);
+      top: 50%;
+    }
+    100% {
+      left: 10%;
+      top: 50%;
+    }
+  }
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .six {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .one {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+  }
+  .two {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+  }
+  .three {
+    width: 110px;
+    height: 110px;
+    background-color: blue;
+  }
+  .four {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+  }
+  .five {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+  }
+  .six {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+  }
+  #showScore{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    color: white;
+   
+  }
